@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Test.Views.Xamls.PollView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Test.Views.Xamls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="400">
+    <Grid>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" 
+                 Margin="10,142,0,0" TextWrapping="Wrap" 
+                 Text="" VerticalAlignment="Top" Width="333"
+                 Height="124" Foreground="White" Background="Black"
+                 FontSize="18"  AcceptsReturn="True"/>
+        <Button x:Name="PrewButton" 
+                BorderThickness="0"  
+                Style="{StaticResource MyButtonStyle}"
+                Click="Prew"  
+                Content="&lt;" 
+                HorizontalAlignment="Left" 
+                Height="71" 
+                Margin="0,369,0,0"
+                Cursor="Hand"
+                VerticalAlignment="Top" Width="60" Background="Transparent" Foreground="White" FontSize="50"/>
+        <Button x:Name="NextButton" Click="Next" 
+                BorderThickness="0"  
+                Style="{StaticResource MyButtonStyle}"
+                Content=">" HorizontalAlignment="Left" Height="71" Margin="283,369,0,0" 
+                VerticalAlignment="Top" Width="60" 
+                Background="Transparent" 
+                Foreground="White" 
+                FontSize="50"
+                Cursor="Hand"/>
+        <TextBlock x:Name="QuestionPlacheholder"
+            Text="Введіть ваше ім'я" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="362" Foreground="White"  FontSize="18" Margin="10,10,0,0"/>
+
+    </Grid>
+</UserControl>
